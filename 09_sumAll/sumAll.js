@@ -1,7 +1,7 @@
 const sumAll = function (a, b) {
   
     if (a <= 0 || b <= 0 ) return "ERROR";
-    if ( !Number.isInteger(a) && !Number.isInteger(b)) return "ERROR"
+    if ( !Number.isInteger(a) || !Number.isInteger(b)) return "ERROR"
   
     let max=a>b?a:b;
     let min=a<b?a:b;
